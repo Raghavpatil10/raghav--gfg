@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: #fff;
+  color: #000;
+  line-height: 1.6;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 1px solid #ccc;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+nav .left {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav .center span,
+nav .right {
+  cursor: pointer;
+}
+
+nav .center {
+  display: flex;
+  gap: 24px;
+}
+
+nav .center span:hover,
+nav .right:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  padding: 60px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.hero img {
+  width: 100%;
+  max-width: 320px;
+  object-fit: cover;
+}
+
+.hero p {
+  font-size: 14px;
+  max-width: 400px;
+}
+
+.hero button {
+  font-size: 11px;
+  background: none;
+  border: none;
+  padding: 0;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* Section */
+.section {
+  padding: 60px 40px;
+  border-bottom: 1px solid #ccc;
+}
+
+.section h2 {
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 12px;
+  margin: 2px 0;
+}
+
+.card p:first-child {
+  font-weight: 600;
+}

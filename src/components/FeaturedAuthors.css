@@ -1,0 +1,36 @@
+.featured-section {
+  padding: 6rem;
+  text-align: center;
+  width: 100%;
+}
+
+.featured-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.author-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.author-card {
+  width: 200px;
+}
+
+.author-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.author-name {
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.author-title {
+  font-style: italic;
+  color: gray;
+}
